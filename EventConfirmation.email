@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="Event Registration Confirmation" recipientType="Contact">
+    <messaging:htmlEmailBody>
+        <html>
+        <body>
+            <p>Hi {!Registration__c.Name},</p>
+            <p>Thank you for registering for {!Registration__c.Event__r.Name}.</p>
+            <p>Event Details:</p>
+            <ul>
+                <li>Date: {!Registration__c.Event__r.Date__c}</li>
+                <li>Location: {!Registration__c.Event__r.Location__c}</li>
+            </ul>
+            <p>We look forward to seeing you!</p>
+        </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
